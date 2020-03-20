@@ -1,0 +1,38 @@
+{
+	"FileVersion" : 3,
+	
+	"FriendlyName" : "Online Subsystem LLL",
+	"Version" : 1,
+	"VersionName" : "1.0",
+	"Description" : "Access to LLLServer",
+	"Category" : "LLL",
+	"CreatedBy" : "Ncsoft, Inc.",
+	"CreatedByURL" : "http://ncsoft.com",
+	"EnabledByDefault" : true,
+
+    "Modules": [
+        {
+            "Name": "OnlineSubsystemLLL",
+            "Type": "Runtime",
+            "LoadingPhase": "Default",
+            "WhitelistPlatforms" :
+			[
+                "Win32",
+                "Win64",
+                "Mac",
+                "Linux"
+			]
+        }
+    ],
+	"Plugins": [
+		{
+			"Name": "OnlineSubsystem",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystemUtils",
+			"Enabled": true
+		}
+	]
+
+}
